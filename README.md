@@ -1,6 +1,7 @@
 # Cacher - Advanced WordPress Cache System
 
-Cacher is a powerful and flexible caching solution for WordPress that supports full page caching, object caching, and database query caching with multiple storage backends.
+Cacher is a powerful and flexible caching solution for WordPress that supports full page caching, and database query caching with multiple storage backends.
+![Cacher plugin](https://github.com/user-attachments/assets/6e6dd45b-275b-4247-816c-f38151450a74)
 
 ## Description
 
