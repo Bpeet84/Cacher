@@ -1,0 +1,705 @@
+/* Admin felület általános stílusok */
+.cacher-admin-wrap {
+    margin: 20px;
+}
+
+/* Felső eszköztár */
+.cacher-toolbar {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Második eszköztár sor */
+.cacher-toolbar-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+    margin-bottom: 20px;
+}
+
+.cacher-controls-left {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.cacher-controls-right {
+    margin-left: auto;
+}
+
+/* Checkbox stílusok */
+.cacher-control-item {
+    display: flex;
+    align-items: center;
+}
+
+.cacher-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.cacher-checkbox-label input[type="checkbox"] {
+    margin: 0;
+}
+
+/* Automatikus TTL opció kiemelése */
+.cacher-ttl-dropdown option[value="auto"] {
+    font-weight: bold;
+    background-color: #f0f7ff;
+}
+
+/* Bal oldali vezérlők */
+.cacher-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Cache kapcsoló */
+.cacher-switch-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cacher-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.cacher-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.cacher-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 24px;
+}
+
+.cacher-slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .cacher-slider {
+    background-color: #2271b1;
+}
+
+input:focus + .cacher-slider {
+    box-shadow: 0 0 1px #2271b1;
+}
+
+input:checked + .cacher-slider:before {
+    transform: translateX(26px);
+}
+
+.cacher-switch-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+}
+
+/* Műveleti gombok */
+.cacher-toolbar .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+    height: auto;
+    min-height: 30px;
+}
+
+.cacher-toolbar .button i {
+    font-size: 16px;
+}
+
+/* Cache driver választó */
+.cacher-driver-select {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: auto;
+}
+
+.cacher-select-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cacher-select-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+}
+
+.cacher-select-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.cacher-driver-dropdown,
+.cacher-ttl-dropdown {
+    min-width: 120px;
+}
+
+/* Tooltip */
+.tooltip-trigger {
+    cursor: help;
+    color: #787c82;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.tooltip-trigger:hover:after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 1.4;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    z-index: 1000;
+    margin-bottom: 8px;
+    min-width: 250px;
+    max-width: 300px;
+    white-space: normal;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+
+.tooltip-trigger:hover:before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 2px;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+/* Driver státusz ikonok */
+.cacher-driver-status {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+.cacher-driver-status.available {
+    color: #46b450;
+}
+
+.cacher-driver-status.unavailable {
+    color: #dc3232;
+}
+
+/* Auto driver info új stílusok */
+.auto-driver-info {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.auto-driver-info .auto-driver-name {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    background-color: rgba(198, 255, 198, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.auto-driver-info .auto-driver-name.available {
+    color: #dc3232;
+}
+
+.auto-driver-info .auto-driver-name.unavailable {
+    color: #dc3232;
+    opacity: 0.7;
+}
+
+/* Töröljük a régi auto-info stílusokat */
+.cacher-auto-info {
+    display: none;
+}
+
+/* Validációs hibaüzenet */
+.cacher-validation-error {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+/* Reszponzív design */
+@media (max-width: 782px) {
+    .cacher-toolbar {
+        flex-direction: column;
+    }
+    
+    .cacher-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .cacher-driver-select {
+        margin-left: 0;
+        flex-direction: column;
+    }
+    
+    .cacher-select-controls {
+        flex-direction: column;
+    }
+}
+
+/* Fő konténer grid elrendezés */
+.cacher-admin-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Panel stílusok */
+.cacher-admin-panel {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+
+.cacher-panel-header {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ccd0d4;
+    background: #f8f9fa;
+}
+
+.cacher-panel-header h2 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.cacher-panel-content {
+    padding: 15px;
+}
+
+/* Kizárások panel */
+.cacher-exclusions {
+    margin-bottom: 15px;
+}
+
+.cacher-exclusions-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1d2327;
+}
+
+.cacher-exclusions textarea {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 15px;
+}
+
+/* Statisztikák panel */
+.cacher-stats-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cacher-stats-table th,
+.cacher-stats-table td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.cacher-stats-table th {
+    font-weight: 600;
+    background: #f8f9fa;
+}
+
+/* Alsó eszköztár */
+.cacher-bottom-toolbar {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Egyedi spinner stílusok */
+.cacher-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #2271b1;
+    border-radius: 50%;
+    animation: cacher-spin 1s linear infinite;
+}
+
+@keyframes cacher-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Egységes toolbar stílusok */
+.cacher-toolbar,
+.cacher-bottom-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    border-radius: 4px;
+}
+
+/* Egységes controls konténer */
+.cacher-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Egységes gomb stílusok */
+.cacher-controls button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Egységes ikon stílusok */
+.cacher-controls button .dashicons {
+    margin-top: 3px;
+}
+
+/* Tooltip ikon stílusok */
+.cacher-controls button .tooltip-trigger {
+    margin-left: 5px;
+    opacity: 0.7;
+}
+
+.cacher-controls button:hover .tooltip-trigger {
+    opacity: 1;
+}
+
+/* Primary gomb kiemelés */
+.cacher-controls button.button-primary {
+    background: #2271b1;
+    border-color: #2271b1;
+    color: #fff;
+}
+
+.cacher-controls button.button-primary:hover {
+    background: #135e96;
+    border-color: #135e96;
+}
+
+/* Alsó toolbar specifikus stílusok */
+.cacher-bottom-toolbar {
+    margin-top: 30px;
+    border-top: 1px solid #c3c4c7;
+}
+
+/* Spinner animáció */
+.cacher-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background: url(../wp-admin/images/spinner.gif) no-repeat;
+    background-size: 16px 16px;
+    vertical-align: middle;
+}
+
+/* Reszponzív igazítások */
+@media screen and (max-width: 782px) {
+    .cacher-controls {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .cacher-controls button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* PayPal támogatás szekció */
+.cacher-support-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.cacher-support-section h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.2em;
+    color: #1d2327;
+}
+
+.cacher-support-message {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    color: #50575e;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.cacher-donate-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.donate-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+/* PayPal gomb stílus */
+.paypal-button {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px !important;
+    height: auto !important;
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+    background: linear-gradient(180deg, #FFD140 0%, #FFB800 100%) !important;
+    border: 1px solid #E3A700 !important;
+    border-radius: 4px !important;
+    color: #000000 !important;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.3) !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1) !important;
+    transition: all 0.2s ease !important;
+}
+
+.paypal-button:hover {
+    background: linear-gradient(180deg, #FFE380 0%, #FFD140 100%) !important;
+    border-color: #FFB800 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+}
+
+.paypal-button:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1) !important;
+}
+
+.paypal-button .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    color: #E91E63;
+}
+
+/* Secure text stílus */
+.secure-text {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #666666;
+    font-size: 12px;
+}
+
+.secure-text .dashicons {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    color: #00A32A;
+}
+
+/* Redis beállítások stílusok */
+.cacher-redis-settings {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cacher-redis-header {
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.cacher-redis-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cacher-redis-form input.small-text {
+    width: 100px;
+    height: 30px;
+}
+
+/* Reszponzív igazítások finomítása */
+@media screen and (max-width: 1400px) {
+    .cacher-toolbar-row {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .cacher-controls-left {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .cacher-controls-right {
+        width: 100%;
+    }
+    
+    .cacher-redis-settings {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    /* Author info gomb stílusok */
+    .cacher-author-info {
+        margin-top: 20px;
+        padding: 20px 0;
+        border-top: 1px solid #dcdcde;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-direction: row;
+    }
+
+    .cacher-author-info .button {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 20px;
+        height: auto;
+        line-height: 1.4;
+        min-width: 200px;
+        justify-content: center;
+        transition: all 0.2s ease;
+    }
+
+    .cacher-author-info .button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .cacher-author-info .button .dashicons {
+        font-size: 18px;
+        width: 18px;
+        height: 18px;
+        line-height: 1.4;
+    }
+}
+
+/* Author info gomb stílusok javítása */
+.cacher-author-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 1px solid #dcdcde;
+}
+
+.cacher-author-website,
+.cacher-author-email {
+    flex: 0 0 auto;
+}
+
+.cacher-author-info .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 6px 16px;
+    min-width: 180px;
+    height: auto;
+    line-height: 1.4;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.cacher-author-info .button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cacher-author-info .button .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+/* Reszponzív viselkedés */
+@media screen and (max-width: 600px) {
+    .cacher-author-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .cacher-author-info .button {
+        width: 100%;
+        min-width: 200px;
+    }
+}

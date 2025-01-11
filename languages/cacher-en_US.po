@@ -1,0 +1,299 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cacher\n"
+"POT-Creation-Date: 2024-01-20 10:00+0100\n"
+"PO-Revision-Date: 2024-01-20 10:00+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e;esc_attr__;esc_attr_e\n"
+"X-Poedit-Basepath: ..\n"
+
+msgid "Cache"
+msgstr "Cache"
+
+msgid "Save Settings"
+msgstr "Save Settings"
+
+msgid "Save all cache settings including driver selections and TTL values."
+msgstr "Save all cache settings including driver selections and TTL values."
+
+msgid "Clear Cache"
+msgstr "Clear Cache"
+
+msgid "Immediately clear all cache content from all drivers."
+msgstr "Immediately clear all cache content from all drivers."
+
+msgid "Cache Preload"
+msgstr "Cache Preload"
+
+msgid "Pre-generate cache for most visited pages for faster loading."
+msgstr "Pre-generate cache for most visited pages for faster loading."
+
+msgid "30 minutes"
+msgstr "30 minutes"
+
+msgid "1 hour"
+msgstr "1 hour"
+
+msgid "2 hours"
+msgstr "2 hours"
+
+msgid "4 hours"
+msgstr "4 hours"
+
+msgid "8 hours"
+msgstr "8 hours"
+
+msgid "12 hours"
+msgstr "12 hours"
+
+msgid "24 hours"
+msgstr "24 hours"
+
+msgid "1 minute"
+msgstr "1 minute"
+
+msgid "5 minutes"
+msgstr "5 minutes"
+
+msgid "10 minutes"
+msgstr "10 minutes"
+
+msgid "15 minutes"
+msgstr "15 minutes"
+
+msgid "Full page cache: Stores complete HTML output. Ideal for static or rarely changing pages."
+msgstr "Full page cache: Stores complete HTML output. Ideal for static or rarely changing pages."
+
+msgid "Query cache: Stores SQL query results. Significantly reduces database load."
+msgstr "Query cache: Stores SQL query results. Significantly reduces database load."
+
+msgid "Automatic driver selection based on availability"
+msgstr "Automatic driver selection based on availability"
+
+msgid "Disabled"
+msgstr "Disabled"
+
+msgid "Automatic"
+msgstr "Automatic"
+
+msgid "Time to Live - how long items are stored in cache"
+msgstr "Time to Live - how long items are stored in cache"
+
+msgid "Automatic TTL"
+msgstr "Automatic TTL"
+
+msgid "Exclude Logged-in Users"
+msgstr "Exclude Logged-in Users"
+
+msgid "When enabled, logged-in users will not receive cached content."
+msgstr "When enabled, logged-in users will not receive cached content."
+
+msgid "Enable Compression"
+msgstr "Enable Compression"
+
+msgid "Use Gzip compression for cache contents."
+msgstr "Use Gzip compression for cache contents."
+
+msgid "Enable Preload"
+msgstr "Enable Preload"
+
+msgid "When enabled, cache preload function can be used. This automatically pre-generates cache for frequently visited pages."
+msgstr "When enabled, cache preload function can be used. This automatically pre-generates cache for frequently visited pages."
+
+msgid "Redis Settings"
+msgstr "Redis Settings"
+
+msgid "Redis server connection settings. Only modify if you are using a custom Redis server."
+msgstr "Redis server connection settings. Only modify if you are using a custom Redis server."
+
+msgid "Host"
+msgstr "Host"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "Auth"
+msgstr "Auth"
+
+msgid "Save"
+msgstr "Save"
+
+msgid "Exclusion Settings"
+msgstr "Exclusion Settings"
+
+msgid "Automatic Exclusions"
+msgstr "Automatic Exclusions"
+
+msgid "Cart Page"
+msgstr "Cart Page"
+
+msgid "Checkout Page"
+msgstr "Checkout Page"
+
+msgid "Shipping Page"
+msgstr "Shipping Page"
+
+msgid "URL Exclusions"
+msgstr "URL Exclusions"
+
+msgid "One URL pattern per line. You can use * wildcard. For example: /cart/*, /checkout/*, /admin/*"
+msgstr "One URL pattern per line. You can use * wildcard. For example: /cart/*, /checkout/*, /admin/*"
+
+msgid "Hook Exclusions"
+msgstr "Hook Exclusions"
+
+msgid "One WordPress hook name per line. These hooks will not be cached. For example: woocommerce_cart_updated, user_profile_update"
+msgstr "One WordPress hook name per line. These hooks will not be cached. For example: woocommerce_cart_updated, user_profile_update"
+
+msgid "SQL Exclusions"
+msgstr "SQL Exclusions"
+
+msgid "One SQL query pattern per line. Queries matching these patterns will not be cached. You can use * wildcard."
+msgstr "One SQL query pattern per line. Queries matching these patterns will not be cached. You can use * wildcard."
+
+msgid "Cache Statistics"
+msgstr "Cache Statistics"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Hits"
+msgstr "Hits"
+
+msgid "Number of successful cache hits"
+msgstr "Number of successful cache hits"
+
+msgid "Misses"
+msgstr "Misses"
+
+msgid "Number of cache misses (when content had to be regenerated)"
+msgstr "Number of cache misses (when content had to be regenerated)"
+
+msgid "Hit Ratio"
+msgstr "Hit Ratio"
+
+msgid "Cache hit ratio compared to all requests"
+msgstr "Cache hit ratio compared to all requests"
+
+msgid "Average Generation Time"
+msgstr "Average Generation Time"
+
+msgid "Average time to generate cache content"
+msgstr "Average time to generate cache content"
+
+msgid "Current Driver"
+msgstr "Current Driver"
+
+msgid "Currently used cache driver"
+msgstr "Currently used cache driver"
+
+msgid "Driver Statistics"
+msgstr "Driver Statistics"
+
+msgid "Driver"
+msgstr "Driver"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Used Space"
+msgstr "Used Space"
+
+msgid "Items"
+msgstr "Items"
+
+msgid "Support the Development!"
+msgstr "Support the Development!"
+
+msgid "If you find the Cacher plugin useful, please consider supporting the project! With your help, we can develop more useful features and maintain the plugin continuously."
+msgstr "If you find the Cacher plugin useful, please consider supporting the project! With your help, we can develop more useful features and maintain the plugin continuously."
+
+msgid "Support with PayPal"
+msgstr "Support with PayPal"
+
+msgid "Service provided by:"
+msgstr "Service provided by:"
+
+msgid "Cache activated"
+msgstr "Cache activated"
+
+msgid "Cache deactivated"
+msgstr "Cache deactivated"
+
+msgid "Settings saved successfully."
+msgstr "Settings saved successfully."
+
+msgid "Settings save failed"
+msgstr "Settings save failed"
+
+msgid "Error occurred: "
+msgstr "Error occurred: "
+
+msgid "Cache cleared successfully!"
+msgstr "Cache cleared successfully!"
+
+msgid "Cache clear failed"
+msgstr "Cache clear failed"
+
+msgid "Cache preload completed"
+msgstr "Cache preload completed"
+
+msgid "Cache preload failed"
+msgstr "Cache preload failed"
+
+msgid "Preload function is not enabled"
+msgstr "Preload function is not enabled"
+
+msgid "Redis settings saved successfully"
+msgstr "Redis settings saved successfully"
+
+msgid "Redis settings saved but connection failed: %s"
+msgstr "Redis settings saved but connection failed: %s"
+
+msgid "Redis settings save failed"
+msgstr "Redis settings save failed"
+
+msgid "Auto driver selected: %s"
+msgstr "Auto driver selected: %s"
+
+msgid "Cache stats table structure"
+msgstr "Cache stats table structure"
+
+msgid "Row type: %s"
+msgstr "Row type: %s"
+
+msgid "Row structure"
+msgstr "Row structure"
+
+msgid "Compression enabled."
+msgstr "Compression enabled."
+
+msgid "Compression disabled."
+msgstr "Compression disabled."
+
+msgid "User exclusion enabled"
+msgstr "User exclusion enabled"
+
+msgid "User exclusion disabled."
+msgstr "User exclusion disabled."
+
+msgid "Auto TTL enabled for %s cache"
+msgstr "Auto TTL enabled for %s cache"
+
+msgid "Preload function disabled!"
+msgstr "Preload function disabled!"
+
+msgid "Preload function enabled!"
+msgstr "Preload function enabled!"
+
+msgid "Visit Plugin Website"
+msgstr "Visit Plugin Website"
+
+msgid "Contact Developer"
+msgstr "Contact Developer"

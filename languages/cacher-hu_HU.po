@@ -1,0 +1,366 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cacher\n"
+"POT-Creation-Date: 2024-01-20 10:00+0100\n"
+"PO-Revision-Date: 2024-01-20 10:00+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e;esc_attr__;esc_attr_e\n"
+"X-Poedit-Basepath: ..\n"
+
+msgid "Cache"
+msgstr "Gyorsítótár"
+
+msgid "Save Settings"
+msgstr "Beállítások mentése"
+
+msgid "Save all cache settings including driver selections and TTL values."
+msgstr "Minden gyorsítótár beállítás mentése, beleértve a meghajtó választásokat és TTL értékeket."
+
+msgid "Clear Cache"
+msgstr "Gyorsítótár törlése"
+
+msgid "Immediately clear all cache content from all drivers."
+msgstr "Azonnal törli az összes gyorsítótár tartalmat minden meghajtóról."
+
+msgid "Cache Preload"
+msgstr "Gyorsítótár előtöltés"
+
+msgid "Pre-generate cache for most visited pages for faster loading."
+msgstr "Előre generálja a gyorsítótárat a leglátogatottabb oldalakhoz a gyorsabb betöltés érdekében."
+
+msgid "30 minutes"
+msgstr "30 perc"
+
+msgid "1 hour"
+msgstr "1 óra"
+
+msgid "2 hours" 
+msgstr "2 óra"
+
+msgid "4 hours"
+msgstr "4 óra"
+
+msgid "8 hours"
+msgstr "8 óra"
+
+msgid "12 hours"
+msgstr "12 óra"
+
+msgid "24 hours"
+msgstr "24 óra"
+
+msgid "1 minute"
+msgstr "1 perc"
+
+msgid "5 minutes"
+msgstr "5 perc"
+
+msgid "10 minutes"
+msgstr "10 perc"
+
+msgid "15 minutes"
+msgstr "15 perc"
+
+msgid "Full page cache: Stores complete HTML output. Ideal for static or rarely changing pages."
+msgstr "Teljes oldal gyorsítótár: A teljes HTML kimenetet tárolja. Ideális statikus vagy ritkán változó oldalakhoz."
+
+msgid "Query cache: Stores SQL query results. Significantly reduces database load."
+msgstr "Lekérdezés gyorsítótár: SQL lekérdezések eredményeit tárolja. Jelentősen csökkenti az adatbázis terhelést."
+
+msgid "Automatic driver selection based on availability"
+msgstr "Automatikus meghajtó választás elérhetőség alapján"
+
+msgid "Disabled"
+msgstr "Kikapcsolva"
+
+msgid "Automatic"
+msgstr "Automatikus"
+
+msgid "Time to Live - how long items are stored in cache"
+msgstr "Élettartam - meddig tárolódnak az elemek a gyorsítótárban"
+
+msgid "Automatic TTL"
+msgstr "Automatikus TTL"
+
+msgid "Preload function disabled!"
+msgstr "Előtöltés funkció kikapcsolva!"
+
+msgid "Preload function enabled!"
+msgstr "Előtöltés funkció engedélyezve!"
+
+
+msgid "Exclude Logged-in Users"
+msgstr "Bejelentkezett felhasználók kizárása"
+
+msgid "When enabled, logged-in users will not receive cached content."
+msgstr "Ha engedélyezve van, a bejelentkezett felhasználók nem kapnak gyorsítótárazott tartalmat."
+
+msgid "Enable Compression"
+msgstr "Tömörítés engedélyezése"
+
+msgid "Use Gzip compression for cache contents."
+msgstr "Gzip tömörítés használata a gyorsítótár tartalmakhoz."
+
+msgid "Enable Preload"
+msgstr "Előtöltés engedélyezése"
+
+msgid "When enabled, cache preload function can be used. This automatically pre-generates cache for frequently visited pages."
+msgstr "Ha engedélyezve van, használható a gyorsítótár előtöltés funkció. Ez automatikusan előre generálja a gyorsítótárat a gyakran látogatott oldalakhoz."
+
+msgid "Redis Settings"
+msgstr "Redis beállítások"
+
+msgid "Redis server connection settings. Only modify if you are using a custom Redis server."
+msgstr "Redis szerver kapcsolat beállításai. Csak akkor módosítsd, ha egyedi Redis szervert használsz."
+
+msgid "Host"
+msgstr "Kiszolgáló"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "Auth"
+msgstr "Hitelesítés"
+
+msgid "Save"
+msgstr "Mentés"
+
+msgid "Exclusion Settings"
+msgstr "Kizárási beállítások"
+
+msgid "Automatic Exclusions"
+msgstr "Automatikus kizárások"
+
+msgid "Cart Page"
+msgstr "Kosár oldal"
+
+msgid "Checkout Page"
+msgstr "Pénztár oldal"
+
+msgid "Shipping Page"
+msgstr "Szállítási oldal"
+
+msgid "URL Exclusions"
+msgstr "URL kizárások"
+
+msgid "One URL pattern per line. You can use * wildcard. For example: /cart/*, /checkout/*, /admin/*"
+msgstr "Soronként egy URL minta. Használhatod a * helyettesítő karaktert. Például: /cart/*, /checkout/*, /admin/*"
+
+msgid "Hook Exclusions"
+msgstr "Hook kizárások"
+
+msgid "One WordPress hook name per line. These hooks will not be cached. For example: woocommerce_cart_updated, user_profile_update"
+msgstr "Soronként egy WordPress hook név. Ezek a hook-ok nem kerülnek gyorsítótárba. Például: woocommerce_cart_updated, user_profile_update"
+
+msgid "SQL Exclusions"
+msgstr "SQL kizárások"
+
+msgid "One SQL query pattern per line. Queries matching these patterns will not be cached. You can use * wildcard."
+msgstr "Soronként egy SQL lekérdezés minta. Az ezeknek megfelelő lekérdezések nem kerülnek gyorsítótárba. Használhatod a * helyettesítő karaktert."
+
+msgid "Cache Statistics"
+msgstr "Gyorsítótár statisztikák"
+
+msgid "Type"
+msgstr "Típus"
+
+msgid "Hits"
+msgstr "Találatok"
+
+msgid "Number of successful cache hits"
+msgstr "Sikeres gyorsítótár találatok száma"
+
+msgid "Misses"
+msgstr "Sikertelen találatok"
+
+msgid "Number of cache misses (when content had to be regenerated)"
+msgstr "Sikertelen gyorsítótár találatok száma (amikor az tartalmat újra kellett generálni)"
+
+msgid "Hit Ratio"
+msgstr "Találati arány"
+
+msgid "Cache hit ratio compared to all requests"
+msgstr "Gyorsítótár találati arány az összes kéréshez viszonyítva"
+
+msgid "Average Generation Time"
+msgstr "Átlagos generálási idő"
+
+msgid "Average time to generate cache content"
+msgstr "Átlagos idő a gyorsítótár tartalom generálásához"
+
+msgid "Current Driver"
+msgstr "Jelenlegi meghajtó"
+
+msgid "Currently used cache driver"
+msgstr "Jelenleg használt gyorsítótár meghajtó"
+
+msgid "Driver Statistics"
+msgstr "Meghajtó statisztikák"
+
+msgid "Driver"
+msgstr "Meghajtó"
+
+msgid "Status"
+msgstr "Állapot"
+
+msgid "Used Space"
+msgstr "Felhasznált terület"
+
+msgid "Items"
+msgstr "Elemek"
+
+msgid "Support the Development!"
+msgstr "Támogasd a fejlesztést!"
+
+msgid "If you find the Cacher plugin useful, please consider supporting the project! With your help, we can develop more useful features and maintain the plugin continuously."
+msgstr "Ha hasznosnak találod a Cacher bővítményt, kérlek fontold meg a projekt támogatását! A segítségeddel még több hasznos funkciót fejleszthetünk és folyamatosan karbantarthatjuk a bővítményt."
+
+msgid "Support with PayPal"
+msgstr "Támogatás PayPal-lal"
+
+msgid "Service provided by:"
+msgstr "Szolgáltatást biztosítja:"
+
+
+# Admin.js fordítások
+msgid "Cache activated"
+msgstr "Gyorsítótár aktiválva"
+
+msgid "Cache deactivated"
+msgstr "Gyorsítótár deaktiválva"
+
+msgid "Settings saved successfully."
+msgstr "Beállítások sikeresen mentve."
+
+msgid "Settings save failed"
+msgstr "Beállítások mentése sikertelen"
+
+msgid "Error occurred: "
+msgstr "Hiba történt: "
+
+msgid "Cache cleared successfully!"
+msgstr "Gyorsítótár sikeresen törölve!"
+
+msgid "Cache clear failed"
+msgstr "Gyorsítótár törlése sikertelen"
+
+msgid "Cache preload completed"
+msgstr "Gyorsítótár előtöltés befejezve"
+
+msgid "Cache preload failed"
+msgstr "Gyorsítótár előtöltés sikertelen"
+
+msgid "Preload function is not enabled"
+msgstr "Az előtöltés funkció nincs engedélyezve"
+
+msgid "Redis settings saved successfully"
+msgstr "Redis beállítások sikeresen mentve"
+
+msgid "Redis settings saved but connection failed: %s"
+msgstr "Redis beállítások mentve, de a kapcsolódás sikertelen: %s"
+
+msgid "Redis settings save failed"
+msgstr "Redis beállítások mentése sikertelen"
+
+msgid "Auto driver selected: %s"
+msgstr "Automatikus meghajtó kiválasztva: %s"
+
+msgid "Cache stats table structure"
+msgstr "Gyorsítótár statisztika tábla struktúra"
+
+msgid "Row type: %s"
+msgstr "Sor típus: %s"
+
+msgid "Row structure"
+msgstr "Sor struktúra"
+
+msgid "Compression enabled."
+msgstr "Tömörítés engedélyezve."
+
+msgid "Compression disabled."
+msgstr "Tömörítés kikapcsolva."
+
+msgid "User exclusion enabled"
+msgstr "Felhasználó kizárás engedélyezve"
+
+msgid "User exclusion disabled."
+msgstr "Felhasználó kizárás kikapcsolva."
+
+msgid "Auto TTL enabled for %s cache"
+msgstr "Automatikus TTL engedélyezve %s gyorsítótárhoz"
+
+# class-cacher-admin.php fordítások
+msgid "Cacher Settings"
+msgstr "Cacher Beállítások"
+
+msgid "Cacher"
+msgstr "Cacher"
+
+msgid "Alapbeállítások"
+msgstr "Alapbeállítások"
+
+msgid "A Cacher plugin alapbeállításai."
+msgstr "A Cacher bővítmény alapbeállításai."
+
+msgid "Alapértelmezett Cache Driver"
+msgstr "Alapértelmezett Gyorsítótár Meghajtó"
+
+msgid "Teljes Oldal Cache"
+msgstr "Teljes Oldal Gyorsítótár"
+
+msgid "Adatbázis Cache"
+msgstr "Adatbázis Gyorsítótár"
+
+msgid "A ✓ jelöli az elérhető, a ✗ pedig a nem elérhető drivereket."
+msgstr "A ✓ jelöli az elérhető, a ✗ pedig a nem elérhető meghajtókat."
+
+msgid "You do not have permission to perform this action."
+msgstr "Nincs jogosultságod a művelet végrehajtásához."
+
+msgid "Cache system activated."
+msgstr "Gyorsítótár rendszer aktiválva."
+
+msgid "Cache system deactivated."
+msgstr "Gyorsítótár rendszer deaktiválva."
+
+msgid "%s cache settings saved successfully!"
+msgstr "%s gyorsítótár beállítások sikeresen mentve!"
+
+msgid "Invalid setting!"
+msgstr "Érvénytelen beállítás!"
+
+msgid "Setting saved successfully!"
+msgstr "Beállítás sikeresen mentve!"
+
+msgid "Failed to save setting!"
+msgstr "Beállítás mentése sikertelen!"
+
+msgid "Cache system is not enabled!"
+msgstr "A gyorsítótár rendszer nincs engedélyezve!"
+
+msgid "Successfully preloaded %d pages. %d failed pages. Pages will automatically refresh after %d seconds."
+msgstr "Sikeresen előtöltve %d oldal. %d sikertelen oldal. Az oldalak automatikusan frissülnek %d másodperc múlva."
+
+msgid "Error occurred during cache preload: %s"
+msgstr "Hiba történt a gyorsítótár előtöltése során: %s"
+
+msgid "Missing required fields!"
+msgstr "Hiányzó kötelező mezők!"
+
+msgid "Host field cannot be empty!"
+msgstr "A kiszolgáló mező nem lehet üres!"
+
+msgid "Invalid port number!"
+msgstr "Érvénytelen port szám!"
+
+msgid "Visit Plugin Website"
+msgstr "Plugin weboldal megtekintése"
+
+msgid "Contact Developer"
+msgstr "Kapcsolat a fejlesztővel"
